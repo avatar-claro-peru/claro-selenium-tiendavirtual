@@ -10,6 +10,6 @@ import cucumber.api.junit.Cucumber;
 		features = { "src/test/resources/features/TiendaVirtual.feature" }, 
 		glue = {"com.test.step.definitions" }, 
 		plugin = { "pretty", "json:target/cucumber-reports/cucumber.json" })
-public class ClaroRunner {
+public class claroRunner {
 
 }

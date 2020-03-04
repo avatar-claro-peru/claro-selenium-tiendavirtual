@@ -14,9 +14,8 @@ public class Hook {
 	@Before("@web")
 	public void inicioWeb() {
 
-		String path = System.getProperty("user.dir");
 		System.setProperty("webdriver.chrome.driver",
-				path + "\\src\\test\\resources\\files\\software\\windows\\chromedriver.exe");
+				"X:\\Unidad_X\\eclipseSTS\\workspace_final\\claro-selenium\\claro-selenium-tiendavirtual\\src\\test\\resources\\files\\software\\windows\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
