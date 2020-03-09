@@ -30,7 +30,7 @@ Feature: Iniciar sesion en Tienda Virtual de Claro Peru
  		And hace clic en boton Continuar
  		And indica el lugar a utilizar la linea
  		And indica el direccion de entrega
- 		And hace clic en boton Seleccionar
+ 		And selecciona forma de pago
  		And acepta el uso de datos personales
  		And hace clic en boton Finalizar pedido
  		Then Se realiza compra correctamente

@@ -16,46 +16,46 @@ public class TiendaVirtualSteps {
 		this.driver = Hook.getDriver();
 	}
 
-	@When("^hace clic en Crear una cuenta$")
-	public void hace_clic_en_Crear_una_cuenta() throws Throwable {
-		TiendaVirtualLogic.clickCrearCuenta();
-	}
-
-	@When("^ingresa sus datos personales$")
-	public void ingresa_sus_datos_personales(DataTable dt) throws Throwable {
-		TiendaVirtualLogic.completeDatosPersonales(dt);
-	}
-
-	@When("^ingresa sus datos de la cuenta$")
-	public void ingresa_sus_datos_de_la_cuenta(DataTable dt) throws Throwable {
-		TiendaVirtualLogic.completeDatosCuenta(dt);
-	}
-
-	@When("^hace clic en boton Crear cuenta$")
-	public void hace_clic_en_boton_Crear_cuenta() throws Throwable {
-		TiendaVirtualLogic.clickCrearCuentaButton();
-		Thread.sleep(3000);
-	}
-	
-	@When("^hace clic en ícono Usuario Perfil$")
-	public void hace_clic_en_ícono_Usuario_Perfil() throws Throwable {
-		TiendaVirtualLogic.clickPerfilButton();
-	}
-
-	@When("^selecciona opcion Mi cuenta$")
-	public void selecciona_opcion_Mi_cuenta() throws Throwable {
-		TiendaVirtualLogic.clickMiCuenta();
-	}
-
-	@When("^hace clic en menú Historial de pedidos$")
-	public void hace_clic_en_menú_Historial_de_pedidos() throws Throwable {
-		TiendaVirtualLogic.clickMenuHistorialPedidos();
-	}
-
-	@Then("^Se muestra todos los pedidos$")
-	public void se_muestra_todos_los_pedidos() throws Throwable {
-	    driver.quit();
-	}
+//	@When("^hace clic en Crear una cuenta$")
+//	public void hace_clic_en_Crear_una_cuenta() throws Throwable {
+//		TiendaVirtualLogic.clickCrearCuenta();
+//	}
+//
+//	@When("^ingresa sus datos personales$")
+//	public void ingresa_sus_datos_personales(DataTable dt) throws Throwable {
+//		TiendaVirtualLogic.completeDatosPersonales(dt);
+//	}
+//
+//	@When("^ingresa sus datos de la cuenta$")
+//	public void ingresa_sus_datos_de_la_cuenta(DataTable dt) throws Throwable {
+//		TiendaVirtualLogic.completeDatosCuenta(dt);
+//	}
+//
+//	@When("^hace clic en boton Crear cuenta$")
+//	public void hace_clic_en_boton_Crear_cuenta() throws Throwable {
+//		TiendaVirtualLogic.clickCrearCuentaButton();
+//		Thread.sleep(3000);
+//	}
+//	
+//	@When("^hace clic en ícono Usuario Perfil$")
+//	public void hace_clic_en_ícono_Usuario_Perfil() throws Throwable {
+//		TiendaVirtualLogic.clickPerfilButton();
+//	}
+//
+//	@When("^selecciona opcion Mi cuenta$")
+//	public void selecciona_opcion_Mi_cuenta() throws Throwable {
+//		TiendaVirtualLogic.clickMiCuenta();
+//	}
+//
+//	@When("^hace clic en menú Historial de pedidos$")
+//	public void hace_clic_en_menú_Historial_de_pedidos() throws Throwable {
+//		TiendaVirtualLogic.clickMenuHistorialPedidos();
+//	}
+//
+//	@Then("^Se muestra todos los pedidos$")
+//	public void se_muestra_todos_los_pedidos() throws Throwable {
+//	    driver.quit();
+//	}
 	
 	@When("^hace clic en ícono Usuario$")
 	public void hace_clic_en_ícono_Usuario() throws Throwable {
@@ -104,22 +104,22 @@ public class TiendaVirtualSteps {
 
 	@When("^indica el direccion de entrega$")
 	public void indica_el_direccion_de_entrega() throws Throwable {
-		TiendaVirtualLogic.clickCentroPoblado(); 
+		TiendaVirtualLogic.clickCentroPoblado();
 	}
 
-	@When("^hace clic en boton Seleccionar$")
-	public void hace_clic_en_boton_Seleccionar() throws Throwable {
-
+	@When("^selecciona forma de pago$")
+	public void selecciona_forma_de_pago() throws Throwable {
+		TiendaVirtualLogic.clickFormaPago();
 	}
 
 	@When("^acepta el uso de datos personales$")
 	public void acepta_el_uso_de_datos_personales() throws Throwable {
-
+		TiendaVirtualLogic.clickCheckTerminos();
 	}
 
 	@When("^hace clic en boton Finalizar pedido$")
 	public void hace_clic_en_boton_Finalizar_pedido() throws Throwable {
-
+		TiendaVirtualLogic.clickFinalizarPedido();
 	}
 
 	@Then("^Se realiza compra correctamente$")
